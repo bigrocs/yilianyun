@@ -83,7 +83,7 @@ func (c *Common) Request(response *responses.CommonResponse) (err error) {
 	}
 	params["sign"] = sign
 	urlParam := util.FormatURLParam(params)
-	fmt.Println(apiUrl, urlParam)
+	// fmt.Println(apiUrl, urlParam)
 	res, err := util.PostForm(apiUrl, urlParam)
 	if err != nil {
 		return err
